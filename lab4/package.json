@@ -1,0 +1,20 @@
+{
+  "name": "101498001_COMP3123-exec04",
+  "version": "1.0.0",
+  "description": "Express.js application for COMP3123 exercise 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": ["express", "nodejs", "api"],
+  "author": "101498001",
+  "license": "ISC"
+}
+

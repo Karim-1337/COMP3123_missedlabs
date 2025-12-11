@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP3123 Exercise 4 - Express.js Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .endpoint {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #007acc;
+            border-radius: 4px;
+        }
+        .method {
+            font-weight: bold;
+            color: #007acc;
+        }
+        .url {
+            font-family: monospace;
+            background-color: #e8e8e8;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #007acc;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+        }
+        .example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>COMP3123 Exercise 4 - Express.js API</h1>
+    
+    <h2>Available Endpoints</h2>
+    
+    <div class="endpoint">
+        <div class="method">GET</div>
+        <div class="url">/hello</div>
+        <p>Returns "Hello Express JS" as plain text.</p>
+        <div class="example">
+            <strong>Example:</strong> <code>GET http://localhost:3000/hello</code><br>
+            <strong>Response:</strong> <code>Hello Express JS</code>
+        </div>
+    </div>
+
+    <div class="endpoint">
+        <div class="method">GET</div>
+        <div class="url">/user</div>
+        <p>Accepts query string parameters: ?firstname=&lt;value&gt;&lastname=&lt;value&gt;</p>
+        <p>If parameters are not provided, defaults to firstname = "Tigran" and lastname = "Khachaturyan"</p>
+        <div class="example">
+            <strong>Example:</strong> <code>GET http://localhost:3000/user?firstname=John&lastname=Doe</code><br>
+            <strong>Response:</strong> <code>{"firstname": "John", "lastname": "Doe"}</code>
+        </div>
+    </div>
+
+    <div class="endpoint">
+        <div class="method">POST</div>
+        <div class="url">/user/:firstname/:lastname</div>
+        <p>Expects path parameters for firstname and lastname.</p>
+        <div class="example">
+            <strong>Example:</strong> <code>POST http://localhost:3000/user/John/Doe</code><br>
+            <strong>Response:</strong> <code>{"firstname": "John", "lastname": "Doe"}</code>
+        </div>
+    </div>
+
+    <div class="endpoint">
+        <div class="method">POST</div>
+        <div class="url">/users</div>
+        <p>Expects a JSON array in the request body, each item with firstname and lastname.</p>
+        <div class="example">
+            <strong>Example Request Body:</strong><br>
+            <code>
+            [<br>
+            &nbsp;&nbsp;{"firstname": "Tigran", "lastname": "Khachaturyan"},<br>
+            &nbsp;&nbsp;{"firstname": "John", "lastname": "Doe"},<br>
+            &nbsp;&nbsp;{"firstname": "John", "lastname": "Rome"}<br>
+            ]
+            </code><br><br>
+            <strong>Response:</strong> Same array as input
+        </div>
+    </div>
+
+    <h2>Static File Serving</h2>
+    <p>This file is served using Express.js static middleware from the <code>/public</code> folder.</p>
+    <p>You can access it at: <code>http://localhost:3000/instruction.html</code></p>
+
+    <h2>Testing the API</h2>
+    <p>You can test these endpoints using:</p>
+    <ul>
+        <li>Postman</li>
+        <li>curl commands</li>
+        <li>Browser (for GET requests)</li>
+        <li>Any HTTP client</li>
+    </ul>
+
+    <h2>Development</h2>
+    <p>To run the development server with auto-restart:</p>
+    <code>npm run dev</code><br><br>
+    
+    <p>To run the production server:</p>
+    <code>npm start</code>
+</body>
+</html>
+
