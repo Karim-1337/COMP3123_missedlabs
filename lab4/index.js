@@ -14,8 +14,8 @@ app.get("/hello", (req, res) => {
 
 // GET /user (query parameters)
 app.get("/user", (req, res) => {
-  const firstname = req.query.firstname || "Tigran";
-  const lastname = req.query.lastname || "Khachaturyan";
+  const firstname = req.query.firstname || "Karim";
+  const lastname = req.query.lastname || "Karabayev";
   res.json({ firstname, lastname });
 });
 
