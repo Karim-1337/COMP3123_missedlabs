@@ -9,7 +9,7 @@
 
 ### Screenshot
 
-![Lab 1 Output](./screenshots/lab1_output.png)
+![Lab 1 Output](./screenshots/LAB1.png)
 
 ---
 
@@ -18,13 +18,10 @@
 ### Screenshots
 
 #### API Documentation
-![Lab 4 API Documentation](./screenshots/lab4_documentation.png)
+![Lab 4 API Documentation](./screenshots/LAB4.png)
 
-#### GET /hello Endpoint
-![Lab 4 GET /hello](./screenshots/lab4_hello.png)
-
-#### GET /user Endpoint
-![Lab 4 GET /user](./screenshots/lab4_user.png)
+#### GET /hello and /user Endpoints
+![Lab 4 Endpoints](./screenshots/LAB4(1).png)
 
 ---
 
@@ -33,19 +30,21 @@
 ### Screenshots
 
 #### GET /home Endpoint
-![Lab 5 GET /home](./screenshots/lab5_home.png)
+![Lab 5 GET /home](./screenshots/lab5.png)
 
 #### GET /profile Endpoint
-![Lab 5 GET /profile](./screenshots/lab5_profile.png)
+![Lab 5 GET /profile](./screenshots/lab5(1).png)
 
 #### POST /login (Successful)
-![Lab 5 POST /login Success](./screenshots/lab5_login_success.png)
+![Lab 5 POST /login Success](./screenshots/lab5(2).png)
 
 #### POST /login (Invalid Username)
-![Lab 5 POST /login Invalid Username](./screenshots/lab5_login_invalid_username.png)
+![Lab 5 POST /login Invalid Username](./screenshots/lab5(3).png)
 
-#### GET /logout Endpoint
-![Lab 5 GET /logout](./screenshots/lab5_logout.png)
+#### Additional Screenshots
+![Lab 5 Screenshot 4](./screenshots/lab5(4).png)
+![Lab 5 Screenshot 5](./screenshots/lab5(5).png)
+![Lab 5 Screenshot 6](./screenshots/lab5(6).png)
 
 ---
 
@@ -53,4 +52,4 @@
 
 ### Screenshot
 
-![Lab 9 React App](./screenshots/lab9_app.png)
+![Lab 9 React App](./screenshots/LAB9.png)
